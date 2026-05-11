@@ -111,11 +111,6 @@
             border: 1px solid var(--shell);
         }
 
-        .order-number {
-            font-size: 0.9rem;
-            color: var(--ochre);
-            margin-bottom: 10px;
-        }
 
         .order-item {
             display: flex;
@@ -459,7 +454,6 @@
 
         <!-- Order Confirmation -->
         <div class="order-details fade-in">
-            <div class="order-number">Order #CB-2024-<span id="orderNumber"></span></div>
             <div class="order-item">
                 <span><strong>Complete Breathing Bundle</strong></span>
                 <span></span>
@@ -619,8 +613,6 @@
     </div>
 
     <script>
-        // Generate random order number
-        document.getElementById('orderNumber').textContent = Math.floor(Math.random() * 900000) + 100000;
         
         // Smooth reveal animations
         const observerOptions = {
